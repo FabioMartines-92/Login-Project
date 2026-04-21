@@ -42,6 +42,18 @@ section#login {
 
     transition: width 0.3s ease, height 0.3s ease;
 }
+ 
+section#login > div > h1 {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+section#login > div > p {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+}
 
 section#login > div#image {
     display: block;
