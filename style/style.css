@@ -52,7 +52,6 @@ section#login > div > h1 {
 section#login > div > p {
     text-align: center;
     font-size: 0.9em;
-    padding: 10px;
 }
 
 section#login > div#image {
@@ -65,5 +64,64 @@ section#login > div#image {
 
 section#login > div#form {
     display: block;
-    padding: 10px;
+    text-align: center;
+      
+}
+
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    padding-bottom: 5px;
+    height: 30px;
+    background-color: #49a09d;
+    color: white;
+    border-radius: 5px;
+/* tentei fazer o caminho igual no video colocando 
+" form > input[type=submit] mas nao funcionou. e do jeito que esta funcionou. descobri que nao precisa usar o > a menos que estivesse diretamente ligados tipo pai > filho */
+}
+
+form > .campo {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    background-color: #5f2c82;
+    padding-bottom: 6px;
+    margin: 5px 0px;
+    border-radius: 5px;    
+}
+
+form > input[type=submit]:hover {
+    background-color: #275553;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form > a.button {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40%;
+    padding-bottom: 5px;
+    background-color: white;
+    color: #377975;
+    border: 1px solid #5cc7c3;
+    border-radius: 5px;
+    margin-top: 5px;   
+    text-decoration: none;
+    
+}
+
+form > a.button > span.material-symbols-outlined {
+    font-size: 1em;
+}
+
+form > a.button:hover {
+    background-color: #275553;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
 }
