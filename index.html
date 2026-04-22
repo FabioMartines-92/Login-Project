@@ -3,46 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="style/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
     <title>Login</title>
 </head>
 <body>
     <main>
         <section id="login">
             <div id="image">
-                <!--aqui inserimos a imagem de background para a tela de login-->
+                <!--imagem de fundo-->
             </div>
-                <div id="form">
-                    <h1>Welcome,</h1>
-                    <p>You’re only one login away from getting things done</br> so let’s not keep it waiting</p>
-                        <form action="login.php" method="post">
-                            <div class="campo">
-                                <span class="material-symbols-outlined">person</span>
-                                    <input type="email" name="user" id="iuser" placeholder="Email" autocomplete="email">
-                                 <label for="id"></label>
-                    </div>
-                        <div class="campo">
-                            <span class="material-symbols-outlined">lock</span>
-                            <input type="password" name="Password" id="password" required minlength="8" autocomplete="current-password" placeholder="Password">
-                            <label for="password"></label>
-                    </div>
-
-                        <input type="submit" value="Login">
-                            <a href="resetpassword.html" class="button">
-            Forgot my password <span class="material-symbols-outlined">mail</span>
-                        </a> 
-                        
-                        
-
-
-
-</form>
+            <div id="form">
+                <h1>Welcome,</h1>
+                <p>
+                    Nice to have you back. Log in to pick up your journey and keep everything moving smoothly.</p>
+                    <form action="login.php" method="post">
+                        <div class="field">
+                            <span class="material-icons">person</span>
+                            <input type="email" name="email" class="ilogin" required autocomplete="email" placeholder="Email" >
+                            <label for="email">Login</label>
+                        </div>
+                        <div class="field">
+                            <span class="material-icons">vpn_key</span>
+                            <input type="password" name="password" class="ipass" required minlength="8" autocomplete="current-password" placeholder="----------Password---------">
+                            <label for="password">Password</label>
+                        </div>
+                        <div>
+                            <input type="submit">
+                            <a href="recovery.html">Forgot Password?</a>
+                        </div>
+                    </form>
 
             </div>
+
         </section>
     </main>
-    
 </body>
 </html>

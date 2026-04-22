@@ -13,9 +13,8 @@
     box-sizing: border-box;
     /* basicamente isso e sempre usado para zerar o padding e margin e assim conseguir controlar o tamanho dos elementos com mais clareza */
 }
-
 body, html {
-    background-color: #5f2c82 ;
+    background-color: #5f2c82;
     height: 100vh;
     width: 100vw;
 }
@@ -28,100 +27,42 @@ main {
 
 section#login {
     position: absolute;
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px; 
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* basicamente isso e para centralizar o elemento, o top e left 50% leva o elemento para o meio da tela, mas ele fica com a borda superior esquerda no meio, entao o transform translate -50% -50% leva o elemento para cima e para a esquerda, centralizando ele completamente. ******ja usamos antes******* */
-
-    background-color: white;
-    width: 250px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
-
-    transition: width 0.3s ease, height 0.3s ease;
-}
- 
-section#login > div > h1 {
-    text-align: center;
-    font-size: 1.4em;
-    padding: 10px;
+   
 }
 
-section#login > div > p {
+div#form  h1 {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+
+div#form p {
+    text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 20px;
 }
 
 section#login > div#image {
     display: block;
     background: #5f2c82 url(../images/universe.jpg) no-repeat;
-    background-position: center bottom;
-    height: 200px;
     background-size: cover;
+    background-position: center right;
+    height: 200px;
 }
 
 section#login > div#form {
     display: block;
-    text-align: center;
-      
-}
+    padding: 10px;
 
-
-form > input[type=submit] {
-    display: block;
-    font-size: 1em;
-    width: 100%;
-    padding-bottom: 5px;
-    height: 30px;
-    background-color: #49a09d;
-    color: white;
-    border-radius: 5px;
-/* tentei fazer o caminho igual no video colocando 
-" form > input[type=submit] mas nao funcionou. e do jeito que esta funcionou. descobri que nao precisa usar o > a menos que estivesse diretamente ligados tipo pai > filho */
-}
-
-form > .campo {
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 40%;
-    background-color: #5f2c82;
-    padding-bottom: 6px;
-    margin: 5px 0px;
-    border-radius: 5px;    
-}
-
-form > input[type=submit]:hover {
-    background-color: #275553;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-form > a.button {
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    width: 100%;
-    height: 40%;
-    padding-bottom: 5px;
-    background-color: white;
-    color: #377975;
-    border: 1px solid #5cc7c3;
-    border-radius: 5px;
-    margin-top: 5px;   
-    text-decoration: none;
-    
-}
-
-form > a.button > span.material-symbols-outlined {
-    font-size: 1em;
-}
-
-form > a.button:hover {
-    background-color: #275553;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
 }
