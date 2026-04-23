@@ -96,7 +96,7 @@ div.field > input {
     padding: 0px;
     border-radius: 8px;
 
-    transform: translateY(-12px);
+    transform: translateY(-14px);
 }
 div.field > input:focus-within {
     background-color: white;
