@@ -66,3 +66,78 @@ section#login > div#form {
     padding: 10px;
 
 }
+
+form > div.field {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+form > div.field > span {
+    color: white;
+    background-color: black;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+
+div.field > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 44.4px);
+    height: 90%;  
+    border: 0px;
+    padding: 0px;
+    border-radius: 8px;
+    transform: translateY(-9.2px);
+    transform: translate();
+}
+
+div.field label {
+    display: none;
+}
+
+ form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #347270;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+form > input[type=submit]:hover {
+    background-color:#16302e;
+    cursor: pointer;
+}
+
+form >a.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: #234e4d;
+    padding-top: 5px;
+    margin-top: 5px;
+    border: 1px solid #49a09d;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+background-color: white;    
+}
+form >a.button:hover {
+    background-color: #48c4bf;
+    cursor: pointer;
+}
+
+form >a.button >span {
+    font-size: 15px;
+    
+}
