@@ -15,7 +15,8 @@ XL (large desktop)	1280px+
     }
     
     section#login {
-        width: 80vw
+        width: 80vw;
+        height: 350px;
     }
     div#form h1 {
     text-align: center;
@@ -52,6 +53,7 @@ XL (large desktop)	1280px+
      
     section#login {
         width: 950px;
+        height: 350px;
     }
     div#form h1 {
     text-align: center;
